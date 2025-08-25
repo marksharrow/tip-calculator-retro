@@ -4,8 +4,14 @@ body {
   background-size: 400% 400%;
   animation: gradientBG 12s ease infinite;
   color: #fff;
-  padding: 50px;
+  padding: 20px; /* smaller default padding for mobile */
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 50px; /* keep spacious padding on larger screens */
+  }
 }
 
 .border-wrapper {
@@ -121,7 +127,7 @@ label {
 .site-footer {
   margin-top: 60px;
   text-align: center;
-  font-family: "Press Start 2P", monospace; /* or your retro font */
+  font-family: "Press Start 2P", monospace;
   font-size: 12px;
   color: #0ff;
   text-shadow: 0 0 5px #0ff;
@@ -197,6 +203,7 @@ label {
   }
 }
 
+/* Mobile tweaks */
 @media (max-width: 480px) {
   .container {
     padding: 20px;
@@ -211,6 +218,7 @@ label {
 
   h1 {
     font-size: 12px;
+    white-space: normal; /* allow wrapping on tiny screens */
   }
 
   .result {
