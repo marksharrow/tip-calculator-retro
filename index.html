@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="border-wrapper">
+      <div class="container">
+        <h1><span class="marquee-text">Tip Calculator</span></h1>
+        <form id="tip-form">
+          <label
+            >Bill Amount ($)
+            <input
+              type="number"
+              id="bill"
+              placeholder="Enter amount"
+              required
+            />
+          </label>
+
+          <label
+            >Tip Percentage (%)
+            <input type="number" id="tip" placeholder="Enter tip %" required />
+          </label>
+
+          <label
+            >Number of People
+            <input
+              type="number"
+              id="people"
+              placeholder="Enter # of people"
+              required
+            />
+          </label>
+
+          <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result" class="result">
+          <!-- Final amount will appear here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
