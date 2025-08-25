@@ -118,6 +118,36 @@ label {
   animation: blink 1s infinite;
 }
 
+.site-footer {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Press Start 2P", monospace; /* or your retro font */
+  font-size: 12px;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+  padding: 20px;
+  border-top: 2px dashed #0ff;
+  animation: pulseGlow 2s infinite alternate;
+}
+
+.site-footer a {
+  color: #ff00cc;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 4px #0ff;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff00cc;
+  }
+}
+
 @keyframes spinBorder {
   0% {
     transform: rotate(0deg);
