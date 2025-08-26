@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta charset="UTF-8" />
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="style.css" />
@@ -15,13 +14,13 @@
     <meta name="theme-color" content="#000000" />
   </head>
   <body>
-    <div class="border-wrapper">
-      <div class="border-effect"></div>
+    <main class="app">
       <div class="container">
-        <h1><span class="marquee-text">Tip Calculator</span></h1>
+        <h1>Tip Calculator</h1>
+
         <form id="tip-form">
-          <label
-            >Bill Amount ($)
+          <label>
+            Bill Amount ($)
             <input
               type="number"
               id="bill"
@@ -30,13 +29,13 @@
             />
           </label>
 
-          <label
-            >Tip Percentage (%)
+          <label>
+            Tip Percentage (%)
             <input type="number" id="tip" placeholder="Enter tip %" required />
           </label>
 
-          <label
-            >Number of People
+          <label>
+            Number of People
             <input
               type="number"
               id="people"
@@ -52,18 +51,21 @@
           <!-- Final amount will appear here -->
         </div>
       </div>
-    </div>
+
+      <footer class="site-footer">
+        <p>
+          👾 Built with 💻, 🎨, and 🎵 by
+          <a
+            href="https://www.linkedin.com/in/lawrence-sharrow/"
+            target="_blank"
+          >
+            Lawrence Sharrow
+          </a>
+          © 2025
+        </p>
+      </footer>
+    </main>
 
     <script src="script.js"></script>
-
-    <footer class="site-footer">
-      <p>
-        👾 Built with 💻, 🎨, and 🎵 by
-        <a href="https://www.linkedin.com/in/lawrence-sharrow/" target="_blank">
-          Lawrence Sharrow
-        </a>
-        © 2025
-      </p>
-    </footer>
   </body>
 </html>

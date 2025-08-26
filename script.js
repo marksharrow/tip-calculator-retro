@@ -1,4 +1,4 @@
-const clickSound = new Audio("click.mp3");
+const clickSound = new Audio("./assets/click.mp3");
 
 const form = document.getElementById("tip-form");
 const result = document.getElementById("result");
