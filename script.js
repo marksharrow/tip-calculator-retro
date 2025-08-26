@@ -3,6 +3,15 @@ const clickSound = new Audio("./assets/click.mp3");
 const form = document.getElementById("tip-form");
 const result = document.getElementById("result");
 
+const formatCurrency = (value) => {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(value);
+};
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   clickSound.play();
@@ -21,8 +30,8 @@ form.addEventListener("submit", function (e) {
   const perPerson = total / people;
 
   result.innerHTML = `
-  Tip: $${tipAmount.toFixed(2)} <br>
-  Total: $${total.toFixed(2)} <br>
-  Each person pays: $${perPerson.toFixed(2)} <span class="cursor">|</span>
-`;
+    Tip: ${formatCurrency(tipAmount)} <br>
+    Total: ${formatCurrency(total)} <br>
+    Each person pays: ${formatCurrency(perPerson)} <span class="cursor">|</span>
+  `;
 });

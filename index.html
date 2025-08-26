@@ -26,14 +26,21 @@
               id="bill"
               placeholder="Enter amount"
               step="0.01"
-              min="0"
+              inputmode="decimal"
               required
             />
           </label>
 
           <label>
             Tip Percentage (%)
-            <input type="number" id="tip" placeholder="Enter tip %" required />
+            <input
+              type="number"
+              id="tip"
+              placeholder="Enter tip %"
+              step="0.1"
+              inputmode="decimal"
+              required
+            />
           </label>
 
           <label>
@@ -42,6 +49,9 @@
               type="number"
               id="people"
               placeholder="Enter # of people"
+              min="1"
+              step="1"
+              inputmode="numeric"
               required
             />
           </label>
